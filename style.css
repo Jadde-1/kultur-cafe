@@ -1,305 +1,616 @@
-/* mere krop */
-* {
+.knap {
+    margin-top:-4.5vh;
+     font-size: 1.5vw;
+     text-align:right;
+     margin-right: 1vh;
+     margin-bottom: 1vh;
+ }
+
+ .knap a {
+    background-color:non;
+    padding-left: 0.4vh;
+    padding-right: 0.4vh;
+    border-radius: 1vh;
+    color: black ;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+    font-weight: 1000;
+    border: 0.3vh solid black;
+    
+}
+
+.knap a:hover {
+background-color: grey;
+}
+
+
+.logo {
+    margin-top:0.1vh ;
+    width: 40vh;
+    margin-left: 1vh;
+    background-color: white;
+    border: none;
+}
+
+
+.overskrift {
+    color: none;
+    text-align: center;
+    font-size: 4vh;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
+    margin-top: -70vh;
+    color: white;
+}
+
+
+hr {
+    height:2px;
+    border-width:0;
+    background-color:black;
+  }
+
+  .omlinje {
+    margin-top: 50vh;
+  }
+
+  .omlinje2 {
+    margin-top: 5vh;
+  }
+
+  .parallax {
+    padding: 50vh;
+    background-image: url("Kopi\ af\ stemning.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+    }
+    
+.omos {
+      margin-left: 3vh;  
+      max-width:90vh;
+    }
+
+.omost {
+    margin-left: 3vh;
+}
+
+
+.tætbillede {
+    margin-left: 1100px;
+    margin-top: -450px;
+    margin-bottom: 20px;
+    padding: 5vh;
+}
+
+html, body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
+  }  
 
-/* kroppen */
-html, body {
-    height: 100%;
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f4f8;
+#omtxt {
+    margin-top: -100vh;
+    font-size: 3vh;
 }
 
 
-  .vaben-box {
-    max-width: 1920px;
-    justify-content: center;
-    align-items: center;
+.chandersen {
+  margin-top: -45vh;
+  margin-left: 53vw;
+
+
 }
 
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+#visibleText {
+  margin-left: 53vw;
+  max-width: 80vh;
 }
 
-/* head bar */
-.navbar {
-    width: 100%;
-    height: 80px;
-    background-color: #001e3c;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
+#hiddenText {
+  margin-top: 5vh;
+  padding: 5vh;
+  margin-bottom: -20vh;
+  
 }
 
-.navbar-content {
-    max-width: 1200px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-   
+.mere {
+  margin-left: 53vw;
+  background-color:non;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 10px;
+  color: black ;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+  font-weight: 1000;
+  border: 3px solid black;
 }
 
-.logo img {
-    width: 80px;
-    height: auto;
+.billede2 {
+  padding: 5vh;
 }
 
-.menu {
-    display: flex;
-    gap: 20px;
+.program {
+  padding: 2vh;
+  font-size: 20px;
+  text-align: center;
 }
 
-
-.menu-item {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    padding: 10px 20px;
-    transition: background-color 0.3s ease;
-    font-weight: bold;
+.program1 {
+  margin-top: 7vh;
+  width: 20vw;
+  font-size: 10px;
+  text-align: center;
+  margin-left: 10vw;
+}
+.program2 {
+  width: 20vw;
+  font-size: 10px;
+  text-align: center;
+  margin-top: -9vh;
+  margin-left:40vw ;
+}
+.program3 {
+  width: 20vw;
+  font-size: 10px;
+  text-align: center;
+  margin-top:-7vh ;
+  margin-left:70vw;
 }
 
-.menu-item:hover {
-    background-color: #004080;
-    border-radius: 5px;
+.programhr {
+  margin-top: 20vh;
 }
 
-/* Headline Section */
-.headline {
-    text-align: center;
-    padding: 100px 20px;
-    background: linear-gradient(135deg, #001e3c 0%, #004080 100%);
-    color: white;
-    margin-bottom: 50px;
-}
-
-.headline h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-}
-
-.headline h2 {
-    font-size: 1.8rem;
-    font-weight: 300;
-}
-
-/* Content Box Styling */
-.vaben-box {
-    background-color: white;
-    padding: 40px;
-    margin: 0 5vw 50px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-}
-
-.vaben-box h2 {
-    color: #001e3c;
-    margin-bottom: 15px;
-    font-size: 2rem;
-}
-
-.vaben-box p {
-    line-height: 1.6;
-    color: #333;
-    font-size: 1.1rem;
-}
-
-/* Box Container */
-.container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 0 5vw 50px;
-}
-
-.box {
-    background-color: #f8f9fa;
-    padding: 20px;
-    margin: 15px;
-    border-radius: 8px;
-    width: 300px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s;
-}
-
-.box:hover {
-    transform: translateY(-10px);
-}
-
-.box h2 {
-    font-size: 1.5rem;
-    color: #0d2645;
-    margin-bottom: 10px;
-}
-
-.box p {
-    font-size: 1rem;
-    color: #666;
-}
-
-/* Amnesty Steps */
-.box1 {
-    background-color: #001e3c;
-    color: white;
-    padding: 20px;
-    border-radius: 8px;
-    margin: 20px auto;
-    max-width: 800px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.box1 h3 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    text-align: left;
-}
-
-.box1 h4 {
-    font-size: 1.2rem;
-    font-weight: normal;
-    text-align: left;
-}
-
-/* Amnesty Dates Box */
-.amnesty-box {
-    background-color: #f4f4f4;
-    padding: 30px;
-    border-radius: 8px;
-    max-width: 600px;
-    margin: 50px auto;
-    text-align: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.amnesty-box h2 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    color: #001e3c;
-}
-
-.amnesty-box ul {
-    list-style-type: none;
-    padding: 0;
-    font-size: 1rem;
-}
-
-.amnesty-box ul li {
-    margin-bottom: 10px;
-}
-
-.amnesty-box ul li strong {
-    color: #0d2645;
-}
-
-.amnesty-box p {
-    font-size: 1rem;
-    color: #333;
-}
-
-/* Footer */
 footer {
-    background-color: #0d2645;
-    color: white;
-    padding: 40px 0;
-    font-size: 14px;
+  margin-top: 9vh;
+  padding: 40px;
+  color: white;
+  background: black;
 }
 
-.footer-container {
-    display: flex;
-    max-width: 1200px;
-    margin-right: 5vw;
-    margin-left: 5vw;
-    padding: 0 20px;
-    flex-wrap: wrap;
+footer li { 
+  list-style: none;
 }
 
-.footer-section ul {
-    list-style: none;
-    padding: 0;
+footer a {
+  color: white;
+  font-size: 20px;
 }
 
-.footer-section ul li {
-    margin-bottom: 8px;
+footer p {
+  float: right;
+  margin-right:-1.5vw;
+  margin-top: 1vh;
 }
 
-.footer-section ul li a {
-    color: #c8ff00;
-    text-decoration: none;
-    font-size: 16px;
+.sted {
+  padding-left:20vw;
+  font-size: 10px;
+  margin-bottom: -9 vh;
 }
 
-.footer-section ul li a:hover {
-    text-decoration: underline;
+.sted1 {
+  padding-left: 20vw;
+  margin-top: -17vh;
+}
+.row {
+ margin-top: -2vh;
+  margin-left: 25vw;
 }
 
-/* iconer */
-.social-media {
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
+.facebook {
+ background-color: black;
+ border: black;
+ padding: 1vw;
+ width: 8vh;
+ }
+
+
+.instagram {
+  background-color: black;
+  border: black;
+  width: 10vh;
+ }
+ 
+ 
+ .twitter {
+  background-color: black;
+  border: black;
+  width: 10vh;
+ }
+ 
+ .icons {
+  margin-left: 35vw;
+  margin-top: -10vh;
+ }
+
+ .bestil {
+  text-align: center;
+  font-size: 20px;
+  padding: 1vh;
+  color: black;
+ }
+
+ .bord1 {
+  text-align: center;
+  width: 70vw;
+  margin-left: 15vw;
+  font-size: 13px;
+  margin-top: 15vh;
+}
+  
+.bordanden {
+  text-align: center;
+  width: 65vw;
+  margin-left: 20vw;
+  font-size: 13px;
+  margin-top: 3vh;
+}
+ 
+.mereinf {
+  text-align: center;
+  width: 65vw;
+  margin-left: 20vw;
+  font-size: 15px;
+  margin-top: 20vh;
 }
 
-.social-media a {
-    margin: 0 10px;
-    transition: opacity 0.3s;
+.cookiess {
+  margin: 5vw;
+  border-radius: 3px;
+  border: solid black;
+  font-family: 'Open Sans', sans-serif;
+  padding: 1vh;
+  margin-bottom: -7vh;
+  margin-top: -1vh;
 }
 
-.social-media a:hover {
-    opacity: 0.7;
+.cookies {
+  font-size: 15px;
+  padding: 1vh;
 }
 
-.social-media img {
-    width: 24px;
-    height: 24px;
+.cookie {
+  font-size: 20px;
 }
 
-/* knapperne */
+.leje {
+  margin: 5vw;
+  border-radius: 3px;
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 10vh;
+  padding-bottom:20vh ;
+  margin-bottom: -7vh;
+  margin-top: -1vh;
+  margin-left: 30vw;
+}
+
+.bente {
+
+  width: 40vw;
+  font-size: 1.5vh;
+  margin-top: 7vh;
+}
+
+.kontaktos {
+  margin-top: 10vh;
+  padding-left: 20vw;
+  font-size: 13px;
+}
+
+
+
+.kinf {
+  font-size: 15px;
+  padding-left:2vw ;
+}
+
+.kos {
+  margin-top: -40vh;
+  margin-left: 24vw;
+  margin-bottom: 2vh;
+} 
+
+.kos2 {
+  margin-left: 40vw;
+  margin-bottom: 25vh;
+}
+
+textarea {
+  height: 100px;
+  width: 20vw;
+  resize: none; /* Dette forhindrer ændring af størrelse */
+}
+
+
+/* Fjern standard browserstil for inputfelter og tekstområder */
+input, textarea {
+  border: 2px solid black; /* Sæt kantens farve til sort */
+  outline: none; /* Fjern fokusstregen */
+}
+
+/* Formularstil */
+form {
+ max-width: 400px;
+ margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input, textarea {
+ width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+}
+
 button {
-    background-color: #c8ff00;
-    color: #0d2645;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  background-color:non;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 10px;
+  color: black ;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+  font-weight: 1000;
+  border: 2px solid black;
 }
 
-button:hover {
-    background-color: #a3cc00;
-}
-.footer-section {
-    flex: 1; 
-    min-width: 200px; 
-    margin: 10px; 
+/* Statusbesked */
+  #besked-status {
+  color: green;
 }
 
-.contact-info a {
-    color: #c8ff00;
-    text-decoration: none;
+img {  
+  max-width: 100%;  
+  height: auto;  
+  }  
+
+@media screen and (max-width: 1760px){
+  /* CSS-regler for skærme, der er 768px eller smalle */
+ 
+  .tætbillede {
+    margin-left: 60vw; /* Margin fra venstre kant */
+    margin-top: -70vh; /* Margin fra toppen med negativ værdi */
+    margin-bottom: 15vh;
+    width:30vw ;
 }
 
-.contact-info h2 {
-    margin-top: 20px;
-    color: #c8ff00;
+.program2 {
+margin-top: -14vh;
+  }
+.program3 {
+  margin-top: -14vh;
 }
 
-.contact-info h3 {
-    margin-top: 15px;
-    color: #c8ff00;
+.chandersen {
+  margin-top:-65vh ;
+}
+#hiddenText {
+  margin-top: 1vh;
 }
 
-.contact-info p {
-    margin-bottom: 10px;
-    font-size: 14px;
+.sted1{
+  margin-top: -22vh;
+}
+
+.kos {
+  margin-top: -60vh;
+}
+}         
+
+@media screen and (max-width: 960px){
+  /* CSS-regler for skærme, der er 768px eller smalle */
+ 
+  .tætbillede {
+    margin-left: 60vw; /* Margin fra venstre kant */
+    margin-top: -50vh; /* Margin fra toppen med negativ værdi */
+    margin-bottom: 15vh;
+    width:30vw ;
+}
+
+hr {
+  margin-top: 2cap;
+}
+
+}
+
+@media screen and (max-width: 650px){
+  /* CSS-regler for skærme, der er 768px eller smalle */
+ 
+  .tætbillede {
+    margin-left: 60vw; /* Margin fra venstre kant */
+    margin-top: -50vh; /* Margin fra toppen med negativ værdi */
+    margin-bottom: 15vh;
+    width:30vw ;
+}
+
+.logo{
+width: 20vh;
+}
+
+.knap {
+margin-top: -3vh;
+margin-bottom: -vw;
+}
+
+hr {
+  margin-top: 2cap;
+}
+
+}
+
+@media screen and (max-width: 400px){
+  /* CSS-regler for skærme, der er 768px eller smalle */
+ 
+  .tætbillede {
+    margin-left: 0vw; /* Margin fra venstre kant */
+    margin-top: 0vw; /* Margin fra toppen med negativ værdi */
+    margin-bottom: 1vw;
+    width:80vw ;
+  
+}
+
+.logo{
+width: 15vh;
+}
+
+.knap {
+margin-top: -2vh;
+margin-bottom: -3vw;
+font-size: 1.2vh;
+}
+
+hr {
+  margin-top: 2cap;
+}
+
+.overskrift{
+font-size: 5vw;
+padding-top:90vh ;
+
+}
+
+.parallax {
+visibility: hidden;
+padding: 0vh;
+}
+
+.omos {
+  margin-left: 7vw;  
+  max-width:90vw;
+  font-size: 3vw;
+}
+.omost {
+  margin-left: 5vw;
+  font-size: 2.5vw;
+}
+
+.program {
+  font-size: 15px;
+}
+
+.program1 {
+  margin-top: 0vh;
+  width: 80vw;
+  font-size: 10px;
+  margin-left: 10vw;
+}
+.program2 {
+    width: 80vw;
+    font-size: 10px;
+    margin-top: 5vh;
+    margin-left:10vw ;
+}
+.program3 {
+  
+    width: 80vw;
+    font-size: 10px;
+    margin-top:5vh ;
+    margin-left:10vw;
+    margin-bottom: -12vh;
+}
+  
+.chandersen {
+  margin-top: -34vh;
+  margin-left: 12vh;
+
+
+}
+
+#visibleText {
+  margin-top: 55vw;
+  margin-left: 15vw;
+  text-align: cewnter;
+  max-width: 70vw;
+}
+
+#hiddenText {
+  margin-top: 5vh;
+  padding: 5vh;
+  margin-bottom: -20vh;
+  
+}
+
+.mere {
+  margin-left: 7vh;
+  background-color:non;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 10px;
+  color: black ;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+  font-weight: 1000;
+  border: 3px solid black;
+}
+
+footer {
+  padding: 50px;
+}
+
+
+footer a {
+  font-size: 10px;
+}
+
+.sted1 {
+  padding-left: 20vw;
+  margin-top: -16vh;
+  font-size: 9px;
+}
+
+.sted {
+  padding-left:20vw;
+  font-size: 7px;
+  margin-bottom: -9 vh;
+}
+
+.row {
+  margin-top: -2vh;
+   margin-left: -10vw;
+ }
+
+ .facebook {
+  width: 4vh;
+  }
+  .icons {
+    margin-left: 50vw;
+    margin-top: -10vh;
+   }
+
+   footer p {
+    float: right;
+    margin-right:-1.5vw;
+    margin-top: 1vh;
+    font-size: 10px;
+    margin-bottom: -1vw;
+
+    
+  }
+
+.bestil {
+  font-size: 15px;
+    
+}
+
+.bord1 {
+  margin-top: 5vh;
+  font-size: 10px;
+}
+
+.bordanden {
+  font-size: 10px;
+}
+
+.mereinf {
+  font-size: 15px;
+  margin-top: 20vh;
+}
 }

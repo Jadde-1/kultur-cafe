@@ -1,0 +1,134 @@
+S<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kultur cafe</title>
+    <!--Navn giv din side. Det er står oppe i fanen på din pc-->
+  <link rel="stylesheet" href="style.css">
+  <!--Husk altid at linke din css fil ellers virker den ikke:) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+
+<!--laptop 1536x864/707  mobil s22ultra 384x824-->
+</head>
+<body>
+    <a href="index.html">
+        <button class="logo">
+            <img class="logo" src="logo.png" alt="Logo">
+        </button>
+    </a>
+    
+    <Div class="knap">
+        <a href="KulturCafe-Oskar.html">Hjem</a> 
+        <a href="KulturCafe-Oskar-bestil-bord.html"> Bord bestilling</a>
+        <a href="KulturCafe-Oskar-Lej-cafeen.html"> Lej Oskar</a>
+        <a href="KulturCafe-Oskar-kontakt-os.html"> Kontakt</a>
+        <!--a href er der hvor du vil have en kanp hvor du føres til en af dine egne sider. Der hvor der nu står hjem er det er står på kappen.-->
+    </Div>
+ <hr>
+ <!--hr er en horizontal linje man kan lave. Der skal også bruges css til det. Det punkt hedder også hr-->
+
+<div class="bestil"><h2>Kontakt os</h2></div>
+
+<div class="kontaktos"><h2> Ønsker du at kontakt os kan det ske via <br> telefon, E-mail, sociale medier eller kontakt formularen.
+    <div class="kinf"><br>Bestyrelse
+    <br>Formand: Poul Frederiksen
+    <br>Tlf. xxxxxxxx
+    <br>xxxxx@gmail.com
+   <br><br>Bent Poulsen
+   <br>Tlf. xxxxxxxx
+    <br>Bent.Poulsen@kulturcafeoskar.dk
+    <br><br>Bo Hansen
+    <br>Tlf. xxxxxxxx
+    <br>bo.Hansen@kulturcafeoskar.dk
+    <br><br>Poul-Jørgen Larsen
+    <br>Tlf. xxxxxxxx
+    <br>valmuevej18@gmail.com
+    <br><br>Kristian Hansen
+    <br>Tlf. xxxxxxxx
+    <br>KristianHansen@gmail.com</h2></div></div>
+<div class="kos2">
+    <div class="kos"><h1>Kontakt formular</h1></div>
+    <div class="fomolar"><form onsubmit="return validateForm()">
+        <label for="navn">Navn:</label>
+        <input type="text" id="navn" name="navn" placeholder="Dit navn" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Din e-mailadresse" required>
+
+        <label for="besked">Besked:</label>
+        <textarea id="besked" name="besked" placeholder="Skriv din besked her" required></textarea>
+
+        <button type="submit">Send</button>
+    </form></div>
+    <p id="besked-status"></p>
+</div>
+    <script>
+        function validateForm() {
+            var navn = document.getElementById("navn").value;
+            var email = document.getElementById("email").value;
+            var besked = document.getElementById("besked").value;
+            var beskedStatus = document.getElementById("besked-status");
+
+            if (navn === "" || email === "" || besked === "") {
+                beskedStatus.innerText = "Udfyld venligst alle felter.";
+                return false;
+            } else {
+                beskedStatus.innerText = "Beskeden er sendt.";
+                return false; // Forhindrer formularen i at sende
+            }
+        }
+    </script>
+
+</body>
+<br><br>
+<br>
+
+<footer>
+  <div class='container'>
+  <div class='row'>
+      <div class='col-md-12'>
+          <ul>
+            <li><a href='KulturCafe-Oskar-bestil-bord.html'>Bord Bestilling</a></li> <br>
+            <li><a href='KulturCafe-Oskar-Lej-cafeen.html'>Lej Oskar</a></li> <br> 
+            <li><a href='KulturCafe-Oskar-kontakt-os.html'>kontakt</a></li> <br>
+            <li><a href='KulturCafe-Oskar-cookies.html'>Cookies</a></li>
+            <div class="sted1"><h2>Lokation:</h2></head></div>
+            <div class="sted"><h2> Kulturcafé Oskar <br> Kingosvej 5 <br> 4321 Søby  <br> Tlf. xxxxxxx </h2></div>
+
+            <div class="icons">
+             <a href="https://www.facebook.com" target="_blank">
+               <button class="facebook">
+                   <img height="40vw" src="facebook.png" alt="Åbner Facebook">
+               </button>
+           </a>
+           
+           <a href="https://www.instagram.com/" target="_blank">
+             <button class="facebook">
+                 <img height="40vw" src="Instagram.png" alt="Åbner twitter">
+             </button>
+           </a>
+           
+           <a href="https://about.twitter.com/en/who-we-are/brand-toolkit" target="_blank">
+             <button class="facebook">
+                 <img height="40vw" src="twitter.png"f alt="">
+             </button>
+           </a></div>
+
+           <p>&copy; HTX Delta inc and co</p>
+          </ul>
+      </div>
+  </div>
+  </div>
+
+
+  <style>
+    .icons a {
+        text-decoration: none; /* Fjerner standardlink-udseende */
+        display: inline-block; /* Gør ikonerne til inline-blokke */
+    }
+  </style>
+</footer>
+</html>
